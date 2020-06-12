@@ -1,1 +1,1 @@
-web: node ./bin/www 
+web: node ./generator/bin/www 
