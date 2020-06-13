@@ -8,6 +8,8 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var slackRouter = require('./routes/slack');
 
+require(`dotenv`).config();
+
 var app = express();
 
 // view engine setup

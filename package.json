@@ -7,9 +7,11 @@
     "devstart": "nodemon ./generator/bin/www"
   },
   "dependencies": {
+    "@slack/webhook": "^5.0.3",
     "cookie-parser": "^1.4.5",
     "core-util-is": "^1.0.2",
     "debug": "^2.6.9",
+    "dotenv": "^8.2.0",
     "ejs": "^2.7.4",
     "express": "^4.17.1",
     "http-errors": "^1.7.3",
