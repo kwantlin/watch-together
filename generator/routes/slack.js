@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/word/:myword', function(req, res, next) {
-  slackTools(req.params.myword);
+  slackTools.sendMyMessage(req.params.myword);
 
   console.log(`the word is ${req.params.myword}`);
   //send that word to slack

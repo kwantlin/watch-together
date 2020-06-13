@@ -14,7 +14,7 @@ const { IncomingWebhook } = require('@slack/webhook');
 // module.sendMyMessage = sendMyMessage;
 // console.log(module.sendMyMessage)
 
-module.exports = async function (word) {
+module.exports.sendMyMessage = async function (word) {
   (async () => {
     const webhook = new IncomingWebhook(process.env.SLACK_WEBHOOK_URL);
 
