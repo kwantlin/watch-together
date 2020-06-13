@@ -1,4 +1,4 @@
-const slackTools = require ('../tools/slackTools');
+const slackTools = require ('../../tools/slack-tools');
 
 var express = require('express');
 var router = express.Router();
@@ -9,12 +9,11 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/word/:myword', function(req, res, next) {
-  slackTools.sendMyMessage(req.params.myword);
+  slackTools(req.params.myword);
+
   console.log(`the word is ${req.params.myword}`);
   //send that word to slack
   res.render('index', { title: `Word=${req.params.myword}` });
 });
-
-
 
 module.exports = router;
